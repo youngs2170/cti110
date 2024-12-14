@@ -1,0 +1,33 @@
+#Shandi Young
+#11/24/2024
+#P2WH2
+#Assignment assesses student understanding of lists
+#Ask the user to input rades for each module
+module_grades =[]
+#Request grades for each module
+module_grades.append(float(input('Enter grade for Module 1: ')))
+module_grades.append(float(input('Enter grade for Module 2: ')))
+module_grades.append(float(input('Enter grade for Module 3: ')))
+module_grades.append(float(input('Enter grade for Module 4: ')))
+module_grades.append(float(input('Enter grade for Module 5: ')))
+module_grades.append(float(input('Enter grade for Module 6: ')))
+#display results
+print('\n--------Results--------')
+#Display the lowest rade in the list
+lowest_grade=min(module_grades)
+print(f'Lowest Grade: 
+{lowest_grade}')
+#Display the highest grade in the list
+highest_grade = max(module_grades)
+print(f'Highest Grade: 
+{highest_grade}')
+#Display the sum of all the grades
+total_sum = sum(module_grades)
+print(f'The sum of grades: 
+{total_sum}')
+#Add length of list
+length_list = len(module_grades)
+#Display the average grade
+average_grade = total_sum/length_list
+print(f'Average: 
+{average_grade:.2f}')
