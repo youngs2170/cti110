@@ -1,0 +1,81 @@
+#Shandi Young
+#11/5/2024
+#P4HW2
+#calcualte pay for employees
+# Initialize totals for calculations
+overtime_Total = 0.0
+regular_pay_Total = 0.0
+gross_pay_Total = 0.0
+employee_Total = 0
+# Ask for employee name input (initial input)
+employee_name = input('Enter employee name or "Done" to terminate: ')
+# Loop until user enters 'Done'
+while employee_name.strip().lower() != "done":
+ 
+# Increase employee count
+ 
+employee_Total += 1
+ 
+# Get hours worked and pay rate for the employee
+ 
+hours_worked = float(input('Enter number of hours worked: '))
+ 
+pay_rate = float(input('Enter employee\'s pay rate: '))
+ 
+# Initialize overtime and regular pay
+ 
+overtime_pay = 0.0
+ 
+overtime_hours = 0.0
+ 
+regular_pay = 0.0
+ 
+# Calculate overtime and regular pay
+ 
+if hours_worked > 40:
+ 
+overtime_hours = hours_worked - 40
+ 
+overtime_pay = overtime_hours * (pay_rate * 1.5)
+ 
+regular_pay = 40 * pay_rate
+ 
+else:
+ 
+regular_pay = hours_worked * pay_rate
+ 
+ 
+# Calculate gross pay
+ 
+gross_pay = regular_pay + overtime_pay
+ 
+# Update totals
+ 
+overtime_Total += overtime_pay
+ 
+regular_pay_Total += regular_pay
+ 
+gross_pay_Total += gross_pay
+ 
+# Display employee pay details
+ 
+print("----------------------------------")
+ 
+print(f'Employee name: {employee_name}')
+ 
+print('Hours Worked Pay Rate OverTime Hours OverTime Pay RegHour Pay Gross Pay')
+ 
+print("-----------------------------------------------------------------------------------")
+ 
+print(f'{hours_worked:<12.2f}{pay_rate:<10.2f}{overtime_hours:<16.2f}{overtime_pay:<14.2f}{regular_pay:<12.2f}{gross_pay:<10.2f}')
+ 
+print("----------------------------------")
+ 
+# Ask for next employee's name 
+ 
+employee_name = input('Enter employee name or "Done" to terminate: ')
+# Final summary after all employees are entered
+print("\nTotal number of employees entered:", employee_Total)
+print(f"Total amount paid for overtime: ${overtime_Total:,.2f}")
+print(f"Total amount paid for regular hours: ${regular_pay_Total:,.2f}")
+print(f"Total amount of gross pay: ${gross_pay_Total:,.2f}")
