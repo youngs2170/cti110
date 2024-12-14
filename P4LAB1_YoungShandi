@@ -1,0 +1,29 @@
+#Shandi Young
+#12/8/2024
+#P4LAB_YoungShandi
+#Draw my initals using turtle
+#set up turtle 
+import turtle
+t=turtle
+t.pencolor('pink')
+t.pensize(6)
+#draw letter S
+t.penup()
+t.setpos(25,100)
+t.pendown()
+t.forward(30)
+t.backward(30)
+t.circle(-90, -185) #Draw top part of the 'S'
+t.circle(90, -250) #Draw bottom part of 'S'
+turtle.done
+#draw letter Y
+t.pensize (10)
+t.left(60) 
+#Draw right arm of Y
+t.forward(100)
+t.back(50)
+t.left(60) 
+#draw left arm of Y
+t.forward(50)
+#keep window open
+turtle.done()
