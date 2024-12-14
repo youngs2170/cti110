@@ -1,0 +1,11 @@
+# Shandi Young
+# 11/14/2024
+# P1HW1
+# SQUARE ROOT
+print('-----Calculating Exponenets-----:\n')
+basevalue = float(input('Enter an integer as the base value:'))
+exponent = float(input('Enter an integer as the exponent:'))
+print()
+#calc exponet
+sqrt = basevalue ** exponent
+print('7 raised to the power of 3 is:',sqrt,'!!'
