@@ -1,0 +1,23 @@
+
+# Young, Shandi
+# 12 Nov, 2024
+# P1HW2
+# Travel Expenses
+print('This program calculates and displays travel expenses.')
+budget = float(input('Enter Budget:'))
+print()
+location = (input('Enter your travel destination:'))
+gas = float(input('How much do you think you will spend on gas?:'))
+hotel = float(input('Approximately, how much will you need for accomodation/hotel:'))
+food =float(input('Last, how much do you need for food?:'))
+# calc expenses
+expenses = gas + hotel + food
+#calc balance
+remainAmount = budget - expenses
+print('\n---------Travel Expenses---------\n')
+print('location:',location)
+print('gas:' ,gas)
+print('hotel:',hotel)
+print('food:',food)
+print()
+print('Remaining Balance:',remainAmount)
